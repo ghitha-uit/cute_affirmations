@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Affirmations & Cats 🐱💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Mood Selection Modal -->
+    <div id="moodModal" class="modal active">
+        <div class="modal-content">
+            <h1>✨ How are you feeling today? ✨</h1>
+            <p>Choose your mood to get a special affirmation!</p>
+            
+            <div class="mood-buttons">
+                <button class="mood-btn happy-btn" onclick="selectMood('happy')">
+                    😊 Happy
+                </button>
+                <button class="mood-btn sad-btn" onclick="selectMood('sad')">
+                    😢 Sad
+                </button>
+                <button class="mood-btn tired-btn" onclick="selectMood('tired')">
+                    😴 Tired
+                </button>
+                <button class="mood-btn stressed-btn" onclick="selectMood('stressed')">
+                    😰 Stressed
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="hidden">
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h1>🌸 You Are Wonderful 🌸</h1>
+                <p class="subtitle">Spreading positivity & cute cats 🐱💖</p>
+            </header>
+
+            <!-- Affirmation Display -->
+            <div class="affirmation-section">
+                <div class="gif-container emoji-display">
+    <span id="catEmoji">🐱</span>
+</div>
+                
+                <div class="affirmation-box">
+                    <p id="affirmationText" class="affirmation-text">
+                        You are amazing! ✨
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="button-group">
+                <button class="btn btn-next" onclick="nextAffirmation()">
+                    💕 Next Affirmation
+                </button>
+                <button class="btn btn-mood" onclick="changeMood()">
+                    🎭 Change Mood
+                </button>
+                <button class="btn btn-reset" onclick="resetPage()">
+                    🔄 Reset Page
+                </button>
+            </div>
+
+            <!-- Decorative Emojis -->
+            <div class="emoji-decoration">
+                <span class="emoji">🐱</span>
+                <span class="emoji">💕</span>
+                <span class="emoji">✨</span>
+                <span class="emoji">🌸</span>
+                <span class="emoji">🎀</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
